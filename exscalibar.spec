@@ -7,7 +7,7 @@ Group:		Applications
 Source0:	http://dl.sourceforge.net/exscalibar/%{name}-%{version}.tar.bz2
 # Source0-md5:	3b0abeb7648d3732e5f4702c4a2be4ab
 URL:		http://sourceforge.net/projects/exscalibar
-BuildRequires:	fftw-devel
+BuildRequires:	fftw3-single-devel
 BuildRequires:	libmad-devel
 BuildRequires:	libsndfile-devel
 BuildRequires:	libvorbis-devel
