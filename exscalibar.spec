@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %build
 
-QTDIR=%{_datadir}/includes/qt/ %configure
-%{__make}
+QTDIR=/usr %configure
+QTDIR=/usr %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -40,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CREDITS CHANGELOG NOTES README RELEASE
+%doc CHANGELOG NOTES README RELEASE
