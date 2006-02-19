@@ -1,4 +1,5 @@
-Summary:	exscalibar
+Summary:	exscalibar - audio signal refinement architecture
+Summary(pl):	exscalibar - architektura do oczyszczania sygna³u d¼wiêkowego
 Name:		exscalibar
 Version:	1.0.4
 Release:	0.1
@@ -6,7 +7,7 @@ License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/exscalibar/%{name}-%{version}.tar.bz2
 # Source0-md5:	3b0abeb7648d3732e5f4702c4a2be4ab
-URL:		http://sourceforge.net/projects/exscalibar
+URL:		http://sourceforge.net/projects/exscalibar/
 BuildRequires:	fftw3-single-devel
 BuildRequires:	libmad-devel
 BuildRequires:	libsndfile-devel
@@ -17,20 +18,25 @@ BuildRequires:	rpmbuild(macros) >= 1.228
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Exscalibar is an EXtendable, SCalable Architecture for Live,
+Interactive or Batch-orientated Audio-signal Refinement.
+
+%description -l pl
+Exscalibar (EXtendable, SCalable Architecture for Live, Interactive or
+Batch-orientated Audio-signal Refinement) to rozszerzalna, skalowalna
+architektura do oczyszczania sygna³u d¼wiêkowego na ¿ywo,
+interaktywnie lub w trybie wsadowym.
 
 %prep
 %setup -q
 
 %build
-
-QTDIR=/usr %configure
-QTDIR=/usr %{__make}
+export QTDIR=/usr
+%configure
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
-#install -d $RPM_BUILD_ROOT
-#install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
