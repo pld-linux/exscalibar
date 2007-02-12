@@ -1,5 +1,5 @@
 Summary:	exscalibar - audio signal refinement architecture
-Summary(pl):	exscalibar - architektura do oczyszczania sygna³u d¼wiêkowego
+Summary(pl.UTF-8):   exscalibar - architektura do oczyszczania sygnaÅ‚u dÅºwiÄ™kowego
 Name:		exscalibar
 Version:	1.0.4
 Release:	0.1
@@ -21,10 +21,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Exscalibar is an EXtendable, SCalable Architecture for Live,
 Interactive or Batch-orientated Audio-signal Refinement.
 
-%description -l pl
+%description -l pl.UTF-8
 Exscalibar (EXtendable, SCalable Architecture for Live, Interactive or
 Batch-orientated Audio-signal Refinement) to rozszerzalna, skalowalna
-architektura do oczyszczania sygna³u d¼wiêkowego na ¿ywo,
+architektura do oczyszczania sygnaÅ‚u dÅºwiÄ™kowego na Å¼ywo,
 interaktywnie lub w trybie wsadowym.
 
 %prep
